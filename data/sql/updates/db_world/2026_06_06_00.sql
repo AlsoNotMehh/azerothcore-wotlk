@@ -1,6 +1,5 @@
--- DB update 2026_05_31_01 -> 2026_06_05_00
--- Patch 3.2.2: Stoneclaw Totem pulses no longer break stealth.
--- Apply DONT_BREAK_STEALTH without incorrectly classifying the pulse as crowd control.
+-- DB update 2026_06_05_00 -> 2026_06_06_00
+-- Correct installations that previously applied AURA_CC to Stoneclaw Totem pulses.
 INSERT INTO `spell_custom_attr` (`spell_id`, `attributes`) VALUES
 (5729, 64),
 (6393, 64),
